@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  border: 1px solid black;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+#containerM {
+  overflow: hidden;
+  border-bottom: 2px solid cornflowerblue;
+}
+
+.marquee {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  width: 200%;
+  height: 30px;
+  animation: marquee 50s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+.contentCube {
+  float: left;
+  width: 150px;
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
